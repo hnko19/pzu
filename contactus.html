@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مطار بورتسودان الدولي - رحلات الوصول والمغادرة لمطار بورتسودان ">
+    <title>مطار بورتسودان الدولي</title>
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body dir="rtl">
+    <!--  Start Navbar  -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img class="logo" src="/img/LogoByName.png" alt="مطار بورتسودان">
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link px-3 position-relative active" aria-current="page" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 position-relative" href="#">شركات الطيران</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 position-relative" href="contactus.html">شكاوي ومقترحات</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link px-3 position-relative dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  جدول الرحلات
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--  End Navbar  -->
+
+    <!-- Start Content -->
+      <section class="contact py-5 mt-4" id="contact">
+        <div class="container">
+            <div class=" main-title-section">
+                <h2 class="main-title"> شكاوي ومقترحات </h2>
+                <p class="lead mt-3 text-center"> 
+                    نسعد بقبول ارائكم ومقترحاتكم لتحسين جودة الخدمة المقدمة
+                </p>
+            </div>
+            <div class="content  position-relative p-5 my-4 bg-white shadow-lg">
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" name="name" class="form-control rounded-0" placeholder="الاسم">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="email" name="email" class="form-control rounded-0" placeholder="Your Email">
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <input type="text" name="subject" class="form-control rounded-0" placeholder="الموضوع">
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <textarea name="message" class="form-control rounded-0" rows="8" placeholder="الرسالة"></textarea>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="main-button"> ارســال </button>
+                          </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </section>
+    <!-- End Content -->
+
+
+    <!-- Start Footer -->
+    <!-- End Footer -->
+    <!-- Start Copyright -->
+    <section class="copyright text-center text-white py-4">
+        <p class="m-0">جميع الحقوق محفوظة لشركة مطارات السودان المحدودة 2024&copy;</p>
+    </section>
+    <!-- Start Copyright -->
+    <!-- Start Side Socail Media -->
+    <section class="social-media">
+        <div class="holder">
+          <a href="#">
+            <span>WhatsApp</span>
+            <i class="fa-brands fa-whatsapp fa-2x"></i>
+          </a>
+          <a href="#">
+            <span>Facebook</span>
+            <i class="fa-brands fa-facebook fa-2x">
+            </i></a>
+          <a href="#">
+            <span>Twitter</span>
+            <i class="fa-brands fa-twitter fa-2x"></i>
+          </a>
+        </div>
+    </section>
+    <!-- End Side Socail Media -->
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- تحميل مكتبة Moment.js مع الترجمة للعربية -->
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+    <!-- تحميل ترجمة للعربية -->
+    <script src="https://momentjs.com/downloads/locale/ar.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            moment.locale('ar');
+            // Get the span element by its Class and change the text
+            $(".time-ago").text(moment('2024-01-21 12:00:00').fromNow());
+        });
+    </script>
+</body>
+</html>
